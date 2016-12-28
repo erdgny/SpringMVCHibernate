@@ -16,6 +16,8 @@
     <script type="text/javascript"src="<c:url value="/assets/js/main.js" />" ></script>
 </head>
 <body>
+
+<div class="container container-fluid container-main">
 <table id="example" class="table table-striped table-bordered nowrap" cellspacing="0" width="100%">
     <thead>
     <tr>
@@ -660,5 +662,7 @@
     </tr>
     </tbody>
 </table>
+
+</div>
 </body>
 </html>
