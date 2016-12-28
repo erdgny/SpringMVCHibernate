@@ -50,6 +50,14 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- YM: javax.servlet:jstl olmali yoksa calismiyor, denedim. -->
+        <!-- Hbb : Provided yaptım, bi zahmet tomcat/lib altına koyarsınız, weblogic de sorun cıkarıyor -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+        </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
