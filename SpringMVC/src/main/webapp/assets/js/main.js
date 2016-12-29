@@ -1,3 +1,8 @@
 $(document).ready(function() {
-    $('#dataTable').DataTable();
+    $('#dataTable').dataTable( {
+        language: {
+            search: "_INPUT_",
+            searchPlaceholder: "Search"
+        }
+    } );
 } );
