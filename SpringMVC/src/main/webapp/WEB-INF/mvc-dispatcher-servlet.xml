@@ -13,6 +13,8 @@
 
     <mvc:annotation-driven />
 
+    <import resource="applicationContext-dao.xml"/>
+
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/pages/"/>
         <property name="suffix" value=".jsp"/>
