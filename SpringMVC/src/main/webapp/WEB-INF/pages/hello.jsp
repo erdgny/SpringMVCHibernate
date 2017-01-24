@@ -4,17 +4,20 @@
 <html lang="${pageContext.response.locale}">
 <head>
     <title>SpringMVCHibernate</title>
-    <link href="<c:url value="/assets/bootstrap-4.0.0-alpha.5-dist/css/bootstrap.css" />" rel="stylesheet">
+    <link href="<c:url value="/assets/bootstrap-3.3.7-dist/css/bootstrap.css" />" rel="stylesheet">
+    <link href="<c:url value="/assets/font-awesome-4.7.0/css/font-awesome.css" />" rel="stylesheet">
     <link href="<c:url value="/assets/data-table/css/dataTables.bootstrap4.css" />" rel="stylesheet">
     <link href="<c:url value="/assets/data-table/css/responsive/responsive.bootstrap4.css" />" rel="stylesheet">
     <link href="<c:url value="/assets/css/style.css" />" rel="stylesheet">
     <script type="text/javascript"src="<c:url value="/assets/jquery-1.12.4/jquery-1.12.4.js" />" ></script>
     <script type="text/javascript"src="<c:url value="/assets/data-table/js/jquery.dataTables.js" />" ></script>
     <script type="text/javascript"src="<c:url value="/assets/tether/js/tether.js" />" ></script>
-    <script type="text/javascript"src="<c:url value="/assets/bootstrap-4.0.0-alpha.5-dist/js/bootstrap.js" />" ></script>
+    <script type="text/javascript"src="<c:url value="/assets/bootstrap-3.3.7-dist/js/bootstrap.js" />" ></script>
     <script type="text/javascript"src="<c:url value="/assets/data-table/js/dataTables.bootstrap4.js" />" ></script>
     <script type="text/javascript"src="<c:url value="/assets/data-table/js/dataTables.responsive.js" />" ></script>
     <script type="text/javascript"src="<c:url value="/assets/data-table/js/responsive/responsive.bootstrap4.js" />" ></script>
+    <script type="text/javascript"src="<c:url value="/assets/data-table/js/dataTables.buttons.js" />" ></script>
+
     <script type="text/javascript"src="<c:url value="/assets/js/main.js" />" ></script>
 </head>
 <body>
@@ -80,6 +83,9 @@
     </tr>
     </tbody>
 </table>
+    <div id="campaignDataTableDiv">
+        <jsp:include page="modal.jsp"/>
+    </div>
 
 </div>
 </body>

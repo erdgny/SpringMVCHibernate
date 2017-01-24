@@ -4,11 +4,9 @@ $(document).ready(function() {
             search: "_INPUT_",
             searchPlaceholder: "Search"
         },
-        'fnDrawCallback': function (oSettings) {
-            $('.dataTables_filter').each(function () {
-                $(this).append('<a href="#" class="btn btn-success" data-toggle="addModal" style="margin-left: 15px"><span class="glyphicon glyphicon-plus"></span> ' +
-                'Add</a>');
-            });
+        initComplete: function(){
+            $('<button class="btn btn-success" data-toggle="modal" data-target="#myModalHorizontal" style="margin-left: 15px">' +
+            '<i class="fa fa-plus" aria-hidden="true"/> New</button>').appendTo('div.dataTables_filter');
         }
     } );
 } );
